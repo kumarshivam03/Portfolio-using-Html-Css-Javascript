@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(rgba(141, 179, 223, 0.811), rgba(109, 39, 229));
+    color: #fbfaf8;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    background-color: rgb(34, 14, 113);
+    height: 90px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    font-size: 1.8rem;
+}
+.right ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.right ul li{
+    list-style: none;
+    margin: 0px 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: cornflowerblue;
+    font-size:1.05rem;
+}
+.first-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+.first-section >div{
+    width: 30%;
+    
+}
+.left-section{
+    font-size: 2.5rem;
+    margin: 70px 0;
+}
+.right-section{
+
+}
+.right-section img{
+    width: 80%;
+}
+.purple{
+    color: rgba(76, 61, 152, 0.874);
+}
+#element{
+    color: rgba(76, 61, 152, 0.874);
+
+}
+.about-heading{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    font-size: 1.45rem;
+}
+
+#img{
+    border: 10px solid white;
+    border-radius: 50%;
+}
+.about-section{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.about-image {
+    width: 100px;
+    height: 100px; 
+    margin: 40px 30px;
+    
+    /* Adjust the width */
+}
+
+.about-text {
+    width: 30%; /* Adjust the width */
+    margin: 40px 100px;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+hr{
+    margin-left: 10%;
+    width: 80%;
+}
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 30%;
+    background-color: rgb(7, 3, 45);
+    color: white;
+    height: 250px;
+    width: 250px;
+    margin: 20px; /* Adjust the margin for spacing */
+  }
+  .project-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+   #i1, #i2, #i3, #i4, #i5 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.proj {
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    margin: 40px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.proj:hover {
+    background-color: rgba(0, 0, 0, 0); /* Remove overlay on hover */
+}
+
+.proj img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially hide the image */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition effect */
+    max-width: 80%; /* Limit the maximum width of the image to 80% of the container */
+    max-height: 80%; /* Limit the maximum height of the image to 80% of the container */
+}
+
+.proj:hover img {
+    opacity: 1; /* Show the image on hover */
+}
+
+.proj-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff; /* White text color */
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0; /* Initially hide the label */
+    transition: opacity 0.3s ease; /* Add transition effect */
+    max-width: 90%; /* Limit the maximum width of the label to 90% of the container */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+.proj:hover .proj-label {
+    opacity: 1; /* Show the label on hover */
+}
+
+.exp-container {
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px; /* Ensure items don't wrap */
+}
+
+.exp-item {
+    margin: 15px; /* Margin to create space between items */
+    width: 55%; /* Total width minus margin*2 */
+    text-align: center; /* Center align content */
+}
+
+.exp-title {
+    margin-top: 20px; 
+    font-size: 1.5rem;/* Adjust as needed */
+}
+#exp{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.exp-des1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 43px;
+    background-color: aliceblue;
+    height: 192px;
+    width: 600px;
+    color: black;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    background-color: snow;
+    font-style: italic;
+}
+.exp-des2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 90px;
+    background-color: snow;
+    height: 192px;
+    width: 600px;
+    color: black;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+
+}
+#exp-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+}
+.email{
+    margin-left: -60px;
+    margin-top: 5px;
+}
+.heart{
+    margin-left:-25px ;
+    margin-top: 5px;
+
+}
+.icons{
+    font-size: 1.5rem;
+    padding: 2.5px;
+}
+#con{
+    margin-left: -40px;
+}
